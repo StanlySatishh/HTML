@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Form Validation </title>
+<script type="text/javascript">
+function validate()
+{
+  if(document.getElementById("username").value=="")
+  {
+    alert("User Name iS Empty!....Please provide your User Name!");
+    return false;
+  }
+  if(document.getElementById("password").value=="")
+  {
+    alert("Password is empty!....Please provide your password!");
+    return false;
+  }
+  return(true);
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return(validate())">
+  User Name:<input type="text" id="username"><br>
+Password:<input type="password" id="password"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
